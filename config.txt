@@ -1,0 +1,87 @@
+{
+  "window.zoomLevel": 1,
+  "workbench.tree.indent": 15,
+  "explorer.compactFolders": false,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.iconTheme": "symbols",
+  // "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.rulers": [
+    80,
+    120
+  ], //exibe linhas verticais para lembrar que codigo está muito grande.
+  "editor.renderLineHighlight": "gutter",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.fixAll.eslint": true,
+    //para organizar os imports ao salvar
+    "source.fixAll": true
+    // "source.organizeImports": true
+  },
+  "tabnine.experimentalAutoImports": true,
+  "cSpell.diagnosticLevel": "Hint", //para a marcação ficar mais discreta no spell checker.
+  "cSpell.language": "en,pt,pt_BR",
+  "workbench.colorTheme": "Rosé Pine Moon",
+  "workbench.startupEditor": "none",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "terminal.integrated.env.windows": {},
+  "symbols.hidesExplorerArrows": false,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.editor.showTabs": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "indenticator.width": 0.1,
+  "indenticator.color.dark": "rgba(255, 255, 255, 0.05)",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.matchBrackets": "never",
+  "breadcrumbs.enabled": false,
+  "editor.glyphMargin": false,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "editor.minimap.enabled": false,
+  "tailwind-fold.foldedText": "",
+  "tailwind-fold.showTailwindImage": true,
+  // "tailwind-fold.unfoldIfLineSelected": true,
+  "tailwind-fold.autoFold": false,
+  // "editor.scrollBeyondLastLine": false,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 80,
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "phpfmt.passes": [
+    "DoubleToSingleQuote"
+  ]
+}
