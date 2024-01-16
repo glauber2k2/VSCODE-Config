@@ -1,13 +1,19 @@
 {
+  // -- workbench config
   "workbench.colorTheme": "Min Dark",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 15,
-  "workbench.activityBar.location": "hidden",
-  "workbench.editor.labelFormat": "short",
-  "workbench.statusBar.visible": false,
-  // "workbench.editor.showTabs": false,
+  "workbench.activityBar.location": "hidden", // => sidebar
+  "workbench.editor.labelFormat": "short", // => formato nome do arquivo
+  "workbench.statusBar.visible": false, // => barra inferior
+  "workbench.editor.showTabs": "none", // => exibir abas
+  "workbench.iconTheme": "symbols",
   "editor.fontFamily": "Jetbrains Mono",
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+
+  // -- editor config
   "editor.formatOnPaste": true,
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
@@ -32,58 +38,73 @@
   "editor.wordWrapColumn": 80,
   "editor.formatOnSave": true,
   "editor.semanticHighlighting.enabled": false,
-  "explorer.compactFolders": false,
+  "editor.minimap.enabled": false,
+
+  // -- window config
+  "window.zoomLevel": 1,
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+
+  // -- terminal config
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.env.windows": {},
+
+  // -- emmet config
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  "terminal.integrated.fontSize": 14,
-  "tabnine.experimentalAutoImports": true,
-  "cSpell.diagnosticLevel": "Hint", //para a marcação ficar mais discreta no spell checker.
-  "cSpell.language": "en,pt,pt_BR",
-  "prettier.singleQuote": true,
-  "indenticator.width": 0.1,
-  "indenticator.color.dark": "rgba(255, 255, 255, 0.05)",
-  "breadcrumbs.enabled": false,
-  "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false,
-  "prettier.jsxSingleQuote": true,
-  "terminal.integrated.env.windows": {},
-  "symbols.hidesExplorerArrows": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "prettier.semi": false,
+
+  // -- javascript config
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "symbols",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.paths": false,
+
+  // -- typescript config
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.suggest.paths": false,
+  "typescript.suggest.autoImports": true,
+
+  // -- dart config
+  "dart.hotReloadOnSave": "all",
+  "dart.hotReloadProgress": "statusBar",
+
+  // -- others config
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "dart.hotReloadOnSave": "all",
-  "dart.hotReloadProgress": "statusBar",
-  "console-ninja.featureSet": "Community",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.sideBar.location": "right",
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
+
+  // -- extensions config
+  "tabnine.experimentalAutoImports": true,
+  "cSpell.diagnosticLevel": "Hint", // => marcador spell checker.
+  "cSpell.language": "en,pt,pt_BR",
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.jsxSingleQuote": true,
+  "indenticator.width": 0.1,
+  "indenticator.color.dark": "rgba(255, 255, 255, 0.05)",
+  "symbols.hidesExplorerArrows": true,
+  "console-ninja.featureSet": "Community",
   "apc.electron": {
     "titleBarStyle": "hiddenInset"
   },
@@ -104,7 +125,5 @@
     ".monaco-list-row": "border-radius: 4px;",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
     // ".title-actions": "display: none" // => more sidebar
-  },
-  "editor.minimap.enabled": false,
-  "window.menuBarVisibility": "compact"
+  }
 }
