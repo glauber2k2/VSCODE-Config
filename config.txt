@@ -1,6 +1,37 @@
 {
-  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Min Dark",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.startupEditor": "none",
   "workbench.tree.indent": 15,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.labelFormat": "short",
+  "workbench.statusBar.visible": false,
+  // "workbench.editor.showTabs": false,
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.formatOnPaste": true,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.rulers": [80, 120], // => linhas verticais como limite
+  "editor.renderLineHighlight": "gutter",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.scrollbar.vertical": "hidden",
+  "editor.cursorBlinking": "expand",
+  "editor.overviewRulerBorder": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "editor.matchBrackets": "never",
+  "editor.glyphMargin": false,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 80,
+  "editor.formatOnSave": true,
+  "editor.semanticHighlighting.enabled": false,
   "explorer.compactFolders": false,
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
@@ -12,62 +43,20 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  "workbench.iconTheme": "symbols",
-  // "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
   "terminal.integrated.fontSize": 14,
-  "editor.lineHeight": 24,
-  "editor.rulers": [
-    80,
-    120
-  ], //exibe linhas verticais para lembrar que codigo está muito grande.
-  "editor.renderLineHighlight": "gutter",
-  "editor.codeActionsOnSave": {
-    "source.addMissingImports": true,
-    "source.fixAll.eslint": true,
-    //para organizar os imports ao salvar
-    "source.fixAll": true
-    // "source.organizeImports": true
-  },
   "tabnine.experimentalAutoImports": true,
   "cSpell.diagnosticLevel": "Hint", //para a marcação ficar mais discreta no spell checker.
   "cSpell.language": "en,pt,pt_BR",
-  "workbench.colorTheme": "Rosé Pine Moon",
-  "workbench.startupEditor": "none",
   "prettier.singleQuote": true,
+  "indenticator.width": 0.1,
+  "indenticator.color.dark": "rgba(255, 255, 255, 0.05)",
+  "breadcrumbs.enabled": false,
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
   "prettier.jsxSingleQuote": true,
   "terminal.integrated.env.windows": {},
   "symbols.hidesExplorerArrows": false,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "workbench.editor.showTabs": false,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.overviewRulerBorder": false,
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.guides.indentation": false,
-  "indenticator.width": 0.1,
-  "indenticator.color.dark": "rgba(255, 255, 255, 0.05)",
-  "workbench.productIconTheme": "fluent-icons",
-  "editor.matchBrackets": "never",
-  "breadcrumbs.enabled": false,
-  "editor.glyphMargin": false,
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.visible": false,
-  "editor.minimap.enabled": false,
-  "tailwind-fold.foldedText": "",
-  "tailwind-fold.showTailwindImage": true,
-  // "tailwind-fold.unfoldIfLineSelected": true,
-  "tailwind-fold.autoFold": false,
-  // "editor.scrollBeyondLastLine": false,
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 80,
-  "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false,
-  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "prettier.semi": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -78,13 +67,44 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[php]": {
-    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
-  },
-  "phpfmt.passes": [
-    "DoubleToSingleQuote"
-  ],
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.iconTheme": "symbols",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dart.hotReloadOnSave": "all",
+  "dart.hotReloadProgress": "statusBar",
+  "console-ninja.featureSet": "Community",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset"
+  },
+  "apc.header": {
+    "height": 38
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.font.family": "Inter",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".pane-body": "padding: 14px 8px",
+    ".pane-header": "padding: 0 8px",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+    // ".title-actions": "display: none" // => more sidebar
+  },
+  "editor.minimap.enabled": false,
+  "window.menuBarVisibility": "compact"
 }
